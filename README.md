@@ -1,0 +1,1 @@
+Working through <a href="http://www.lmpt.univ-tours.fr/~volkov/C++.pdf">this textbook</a> on understanding everything there is to know on C++ w/ <a href="https://twitter.com/thezaynpatel">@thezaynpatel</a>.

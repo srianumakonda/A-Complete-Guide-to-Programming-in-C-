@@ -1,0 +1,26 @@
+output of given code:
+
+#include <iostream>
+using namespace std;
+
+void pause(); // Prototype
+
+int main()
+{
+    cout << endl << "Dear reader, "
+    << endl << "have a ";
+    pause();
+    cout << "!" << endl;
+    return 0;
+}
+void pause()
+{
+    cout << "BREAK";
+}
+
+OUTPUT:
+
+Dear reader, 
+have a BREAK!
+
+notice that there is no endl until the program ends which is why everything goes on that second line. if there was an endl after everything, then there would be in multiple lines.
