@@ -1,0 +1,12 @@
+int a(2.5); -> that's a float
+char z(500) is wrong -> char only takes string input
+double he's(1.2E+5); -> no quote-strings in variable definition
+const long large; -> have to add value
+char c('\''); -> too many quotes
+
+line 5 is wrong. my reasoning was wrong, it's allowed.
+
+int big = 40000; is technically valid but on 16-bit systems that doesn't work (2^15=32768 < 40000)
+float val = 12345.12345; is also wrong -> accuracy of floats is only 6 digits.
+
+TOTAL SCORE = 4/6
