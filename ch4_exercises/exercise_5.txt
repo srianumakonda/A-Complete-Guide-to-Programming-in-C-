@@ -1,0 +1,79 @@
+original program:
+
+// A program with resistant mistakes
+#include <iostream>
+using namespace std;
+int main()
+{
+char ch;
+string word;
+cin >> "Let's go! Press the return key: " >> ch;
+cout << "Enter a word containing
+three characters at most: ";
+cin >> setprecision(3) >> word;
+cout >> "Your input: " >> ch >> endl;
+return 0;
+}
+
+modified program:
+
+// A program with resistant mistakes
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+    char ch;
+    string word;
+    cout >> "Let's go! Press the return key: " >> endl;
+    cin >> ch;
+    cout << "Enter a word containing three characters at most: ";
+    cin >> setprecision(3) >> word;
+    cout >> "Your input: " >> ch >> endl;
+    return 0;
+}
+
+MY ATTEMPT AT THIS: 
+
+#include <iostream>
+#include <iomanip>
+#include <string>
+using namespace std;
+int main()
+{
+
+    string word;
+    cout << "Let's go! Press the return key: " << endl;
+
+    cout << "Enter a word containing three characters at most: ";
+
+    cin >> setw(3) >> word;
+    cout << "Your input: " << word << endl;
+    return 0;
+}
+
+is what i got to. its wrong and had to do a bit of googling. figured out that the return thing is useless which is why i deleted it. but i didn't know that you can just use cin.get() to get the new solution.
+
+ACTUAL SOLUTION: 
+
+// Corrections are commented.
+//
+#include <iostream>
+#include <iomanip> // Manipulator setw()
+#include <string> // Class string
+using namespace std;
+int main()
+{
+string word; // To read a word.
+// char ch; is not needed.
+// cout << ...instead of cin >> .
+cout << "Let's go! Press the return key: ";
+cin.get(); // Input newline character
+cout << " Enter a word " // "
+"containing three characters at the most: ";// "
+cin >> setw(3) >> word; // setw(3) instead of
+// setprecision(3)
+cout << "Your input: " // <<
+<< word << endl; // instead of >> ch
+return 0;
+}

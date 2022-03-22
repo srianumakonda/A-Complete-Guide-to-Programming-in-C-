@@ -1,0 +1,17 @@
+The int variable x contains the number 7. Calculate the value of the following
+logical expressions:
+
+a. x < 10 && x >= –1
+
+true -> 7 is less than 10 and greater than -1
+
+b. !x && x >= 3
+
+false -> !x would be 0 right which is false and because it's and, automatically whole statement is false
+
+c. x++ == 8 || x == 7
+
+true -> first is wrong, second is right. first is wrong since x++ would still be 7
+
+i got this wrong. remember that ++ (postfix) is a delayed update. so x++ shows 7 in console but is actualy 8. therefore, 8 != 7 making it false
+

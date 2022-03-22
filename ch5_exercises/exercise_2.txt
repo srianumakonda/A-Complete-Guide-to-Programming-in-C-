@@ -1,0 +1,15 @@
+a. How are operands and operators in the following expression associated?
+x = –4 * i++ – 6 % 4;
+
+
+
+Insert parentheses to form equivalent expressions.
+
+x = (–4 * i++) – (6 % 4);
+
+b. What value will be assigned in part a to the variable x if the variable i has a
+value of –2?
+
+x = –4 * (-2)++ – 6 % 4;
+  = -4 * -2 - 2
+  = 6

@@ -1,0 +1,12 @@
+What values do the following arithmetic expressions have?
+a. 3/10 b. 11%4 c. 15/2.0
+d. 3 + 4 % 5 e. 3 * 7 % 4 f. 7 % 4 * 3
+
+a. 0
+b. 3
+c. 7.5
+d. 7 (3 + 4 since 4/5 has a remainder of 4 and is < 1 -> making it 0)
+e. 1
+f. 9
+
+6/6 final

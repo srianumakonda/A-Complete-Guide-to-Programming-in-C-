@@ -1,0 +1,26 @@
+EXERCISE: figure out what the output is of the given code.
+
+given code:
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    double x = 12.0;
+    cout.precision(2); // Precision 2
+    cout << " By default: " << x << endl;
+    cout << " showpoint: " << showpoint << x << endl;
+    cout << " fixed: " << fixed << x << endl;
+    cout << " scientific: " << scientific << x << endl;
+    return 0;
+}
+
+what's the output:
+
+By default:    12
+ showpoint:    12
+ fixed:        12.00
+ scientific:   1.2e+1  
+
+technically, got 2/4 right. didn't put the decimal at the showpoint because i made the assumption that it would round to 12 [just like default]. 
+also didn't know that scientific notation also followed the precision thing, based on decimals. because i thought it was 1.2 (which was 2), id be fine. but I was wrong here and it should've been 1.20
